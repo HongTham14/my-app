@@ -20,6 +20,7 @@
 }
 
 .navbar-icon {
+  
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -76,6 +77,9 @@
   margin-left: 32px;
   flex-direction: column;
 }
+.navbar-menu-title:hover{
+  fill:#ff7506;
+}
 
 .menu-title-content {
   opacity: 0.8;
@@ -88,25 +92,27 @@
   margin-left: 14px;
 }
 
-.menu-title-content.menu-title-content--active::after {
+/* .menu-title-content .menu-title-content--active::after {
   content: "";
   width: 8px;
   height: 56px;
   border-radius: 11px;
-  background: #ff7506;
+  background: #373839;
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-}
+} */
 
-.menu-title-content.menu-title-content--active {
+.menu-title-content{
+  color: #373839;
+}
+.menu-title-content:hover,.menu-title-content--active:hover,.menu-title-content-salary:hover {
   color: #ff7506;
 }
-
-.menu-title-content.menu-title-content--active .navbar-menu-icon {
+.navbar-menu-icon:hover {
   fill: #ff7506;
-}
+} 
 
 .navbar-menu-title {
   margin: 0 0 40px 32px;
